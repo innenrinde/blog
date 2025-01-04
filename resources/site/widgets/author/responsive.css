@@ -1,0 +1,56 @@
+
+/* DESKTOP */
+@media only screen and (max-width: 1300px) {
+
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1220px) {
+
+}
+
+
+/* TABLET */
+@media only screen and (max-width: 1000px) {
+    .author, .author img {
+        width: 50px;
+        height: 50px;
+    }
+
+    span.comment {
+        width: 40px;
+        border-radius: 0px 10px 0px 10px;
+        left: 5px;
+    }
+
+    span.comment span:nth-child(3),
+    span.comment span:nth-child(4),
+    span.comment span:nth-child(5) {
+        margin-left: 6px;
+    }
+}
+
+
+/* TABLET */
+@media only screen and (max-width: 780px) {
+    .author {
+        display: none;
+    }
+
+    .author2 {
+        display: none;
+
+    }
+}
+
+
+/* PHONE */
+@media only screen and (max-width: 600px) {
+    header.sticky .menu {
+        float: right;
+        margin-top: 5px;
+        margin-right: 5px;
+        transition: all 0.4s ease;
+        font-size: 10px;
+    }
+}

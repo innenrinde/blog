@@ -1,0 +1,162 @@
+<!-- BEGIN .content -->
+<section class="content">
+	<!-- BEGIN .wrapper -->
+	<div class="wrapper">	
+		<!-- BEGIN .full-block -->
+		<div class="full-block with-border-bottom">
+			<div class="breadcrumb">
+				<h3><a href="/">Home </a> &rsaquo; <?php if(strlen($category['title_parent']) > 0) { echo $category['title_parent']." &rsaquo; "; } ?><?=$category['title']?></h3>
+			</div>
+			<div class="clear-float"></div>
+		</div><!-- END .full-block -->
+
+		<div class="main-content-wrapper">
+
+			
+			<!-- BEGIN .main-content-spacy -->
+			<div class="main-content">
+				<!-- BEGIN .def-panel -->
+				<div class="def-panel">
+					<div class="panel-title">									
+						<h2 style="color: #ff9435; border-bottom: 2px solid #ff9435;"><?=$category['title']?></h2>
+					</div>
+					<div class="panel-content medium-article-list">
+						<?php if(!empty($news)) { ?>
+							<?php foreach($news as $i=>$v) { ?>
+							<!-- BEGIN .item -->
+							<div class="item">
+								<div class="item-header">
+									<div class="relative-element">												
+										<a href="single-article.html" class="hover-image"><img src="<?=$this->config->item("live_path")?>/files/news/mediu/<?=$v['image_file']?>" alt="" /></a>
+									</div>
+								</div>
+								<div class="item-content">
+									<h3><a href="<?=build_news_link($v, $this->config->item('live_path'))?>"><?=$v['title']?></a></h3>
+									<p><?=truncate($v['content'])?></p>
+									<a href="<?=build_news_link($v, $this->config->item('live_path'))?>" class="read-more-link-small">Citeste mai mult<i class="fa fa-chevron-right"></i></a>
+								</div>
+							</div><!-- END .item -->
+							<?php } ?>
+						<?php } ?>
+						
+						<!--
+						<div class="pagination">
+							<a class="prev page-numbers" href="#"><i class="fa fa-caret-left"></i>Inapoi</a>
+							<a class="page-numbers" href="#">1</a>
+							<span class="page-numbers current">2</span>
+							<a class="page-numbers" href="#">3</a>
+							<a class="page-numbers" href="#">4</a>
+							<a class="page-numbers" href="#">5</a>
+							<a class="next page-numbers" href="#">Pagina urmatoare<i class="fa fa-caret-right"></i></a>
+						</div>
+						-->
+						
+					</div>
+				<!-- END .def-panel -->
+				</div>
+
+			<!-- END .main-content-spacy -->
+			</div>
+
+
+			<!-- BEGIN rightcol -->
+			<aside id="sidebar">
+				<!-- BEGIN -->
+				<div class="rblock bggray">
+					<h3>Subscribe Newsletter</h3>
+					<div class="subscribe">
+						<p>Ne eam liber veritus, eos eu agam recteque, exerci reformidans sea no</p>
+						
+						<form name="aweber-form" action="#" class="subscribe-form">										
+							<p class="sub-email">
+								<input type="text" value="" placeholder="Addresa de email.." name="email" class="email">
+							</p>
+							<p class="sub-submit">
+								<input type="submit" value="Subscribe" class="button aweber-submit">
+							</p>
+						</form>
+					</div>							
+				</div> <!-- END  -->
+				
+				<!-- BEGIN -->
+				<div class="rblock full-block">
+					<div class="right social-content">
+					Agrofinanciar Social
+					<a href="#" target="_blank" class="soc-rss-icon"><i class="fa fa-rss"></i></a>
+					 <a href="#" target="_blank" class="soc-facebook-icon"><i class="fa fa-facebook"></i></a>
+					<a href="#" target="_blank" class="soc-twitter-icon"><i class="fa fa-twitter"></i></a>
+					</div>                            
+				</div><!-- END  -->
+			
+				<!-- BEGIN -->
+				<div class="rblock">
+					<div class="banner">
+						<a href="#" target="_blank"><img src="images/no-banner-300x250.jpg" alt="" /></a>
+					</div>							
+				</div><!-- END  -->
+			  
+				
+				<!-- BEGIN-->
+				<div class="rblock">
+					<h3>Popular Articles</h3>                                            
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#1sapt" data-toggle="tab">1saptamana</a></li>
+									<li><a href="#1luna" data-toggle="tab">1 luna</a></li>
+									<li><a href="#1an" data-toggle="tab">1 an</a></li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active" id="1sapt">
+												<ol>
+													<li><a href="#">Eu sed appareat persequeris</a></li>
+													<li><a href="#">Id illud summo mentitum vel saperet legimus</a></li>
+													<li><a href="#">Molestie persequeris theophrastus est ius viris nobis facilis</a></li>
+													<li><a href="#">Eu sed appareat persequeris</a></li>
+													<li><a href="#">Theophrastus est ius viris nobis facilis</a></li>
+													<li><a href="#">More working families use food banks for help</a></li>
+												</ol>
+																									
+									</div>
+									<div class="tab-pane" id="1luna">		
+											<ol>					
+											   <li><a href="#">Persequeris theophrastus est ius viris nobis facilis</a></li>
+											   <li><a href="#">Theophrastus est ius viris nobis facilis</a></li>
+											   <li><a href="#">More working families use food banks for help</a></li>
+											</ol>
+									</div>
+									<div class="tab-pane" id="1an">
+											<ol>
+												<li><a href="#">Eu sed appareat persequeris</a></li>
+												<li><a href="#">Theophrastus est ius viris nobis facilis</a></li>
+												<li><a href="#">More working families use food banks for help</a></li>
+											 </ol>
+									</div>
+								</div>
+				</div> <!-- END  -->
+				
+				<!-- BEGIN -->
+				<div class="rblock">
+					<div class="banner">
+						<a href="#" target="_blank"><img src="images/no-banner-300x250.jpg" alt="" /></a>
+					</div>							
+				</div><!-- END  -->
+				
+				<!-- BEGIN  -->
+				<div class="rblock">
+					<h3>Etichete Articole</h3>
+					<div class="tagcloud">									
+						<a href="#">Accumsan temporibus</a>
+						<a href="#">Elitr vitae mei</a>
+						<a href="#">Invidunt incorrupte</a>
+						<a href="#">Lorem ipsum</a>
+					</div>							
+				</div><!-- END  -->
+
+			</aside><!-- end rightcol -->
+
+		</div>
+		
+	<!-- END .wrapper -->
+	</div>
+	
+<!-- BEGIN .content -->
+</section>

@@ -1,0 +1,103 @@
+/* author left column */
+.author {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    overflow: hidden;
+}
+
+.author2 {
+    margin-top: 10px;
+}
+
+.author img {
+    width: 70px;
+    min-height: 70px;
+}
+
+.author i {
+    position: absolute;
+    color: #335C7D;
+    font-size: 36px;
+    right: 5px;
+    margin-top: -10px;
+    opacity: 0.5;
+}
+
+span.comment {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 29px;
+    background-color: #fff;
+    border-radius: 0px 15px 0px 15px;
+    border: solid 1px #df3132;
+    left: 10px;
+    margin-top: -19px;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+span.comment span:nth-child(1) {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    bottom: -6px;
+    right: 1px;
+    background-color: #ffffff;
+    border-right: solid 1px #df3132;
+    border-bottom: solid 1px #df3132;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+span.comment span:nth-child(2) {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: -6px;
+    left: 1px;
+    background-color: #ffffff;
+    border-left: solid 1px #df3132;
+    border-top: solid 1px #df3132;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+span.comment span:nth-child(3) {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    margin-left: 12px;
+    margin-top: 6px;
+    border-bottom: solid 1px #df3132;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+span.comment span:nth-child(4) {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    margin-left: 12px;
+    margin-top: 11px;
+    border-bottom: solid 1px #df3132;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+span.comment span:nth-child(5) {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    margin-left: 12px;
+    margin-top: 16px;
+    border-bottom: solid 1px #df3132;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+/* END author */

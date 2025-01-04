@@ -1,0 +1,39 @@
+# robots.txt 
+
+User-agent: Googlebot
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /admin.php 
+Disallow: /gen/
+Disallow: /webmail
+
+User-agent: googlebot-image
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /admin.php 
+Disallow: /gen/
+Disallow: /webmail
+
+User-agent: googlebot-mobile
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /admin.php 
+Disallow: /gen/
+Disallow: /webmail
+
+User-agent: MSNBot
+Allow: / 
+
+Disallow: /cgi-bin/
+Disallow: /admin.php 
+Disallow: /gen/
+Disallow: /webmail
+
+User-agent: Slurp
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /admin.php 
+Disallow: /gen/
+Disallow: /webmail
+ 
+Sitemap: http://www.agrofinanciar.ro/sitemap.xml

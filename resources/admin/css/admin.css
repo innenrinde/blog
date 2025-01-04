@@ -1,0 +1,95 @@
+.error_messages {
+	border: solid 1px red;
+	color: red;
+	padding: 5px;
+}
+
+.error_messages p {
+	margin: 0px;
+}
+
+.clear {
+	clear: both;
+	height: 10px;
+}
+
+.filters {
+    height: 35px;
+}
+
+.filters .col-sm-2, .filters .col-sm-1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.filters .btn-sm {
+    margin-left: 2px; height: 34px;
+}
+
+.filters .input-group {
+    float: left;
+}
+
+/* order list */
+.list_order ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.list_order ul li {
+    list-style-type: none;
+}
+
+.list_order ul li number {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+
+.list_order ul li img {
+    width: 40px;
+    border: solid 1px #000;
+}
+
+.list_order ul li a {
+
+}
+
+.list_order ul li a.remove {
+	font-weight: normal;
+	float: right;
+}
+
+.list_order ul li span {
+	display: block;
+	padding: 10px;
+	cursor: move;
+	margin: 1px;
+	border: solid 1px #cacaca;
+	background-color: #f8f8f8;
+}
+
+.trendline {
+    border-top: solid 2px red;
+    color: red;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+/* END order list */
+
+.form-group ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-group ul li {
+}
+
+.tab-content {
+    border-left: solid 1px #cacaca;
+    border-right: solid 1px #cacaca;
+    border-bottom: solid 1px #cacaca;
+    padding: 10px;
+}

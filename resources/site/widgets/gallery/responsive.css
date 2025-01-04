@@ -1,0 +1,26 @@
+/* DESKTOP */
+@media only screen and (max-width: 1300px) {
+
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1220px) {
+
+}
+
+/* TABLET */
+@media only screen and (max-width: 1000px) {
+
+}
+
+/* TABLET */
+@media only screen and (max-width: 780px) {
+
+}
+
+/* PHONE */
+@media only screen and (max-width: 600px) {
+    .demo-gallery a {
+        height: 70px;
+    }
+}

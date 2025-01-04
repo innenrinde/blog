@@ -1,0 +1,28 @@
+.demo-gallery {
+    margin: 0px 0px 50px 0px !important;
+}
+
+.demo-gallery a {
+    display: inline-block;
+    float: left;
+    width: 19%;
+    height: 100px;
+    overflow: hidden;
+    margin: 0px 1px 1px 0px;
+}
+
+.demo-gallery a img {
+    width: 100%;
+    min-height: 100%;
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+    transition: all 0.8s ease;
+}
+
+.demo-gallery a img:hover {
+    -ms-transform: scale(1.5, 1.5); /* IE 9 */
+    -webkit-transform: scale(1.5, 1.5); /* Safari */
+    transform: scale(1.5, 1.5);
+    transition: all 0.8s ease;
+}

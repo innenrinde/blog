@@ -1,0 +1,90 @@
+/* DESKTOP */
+@media only screen and (max-width: 1300px) {
+
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1220px) {
+
+}
+
+
+/* TABLET */
+@media only screen and (max-width: 1000px) {
+
+	header .menu {
+		display: none;
+	}
+
+	header .menu li {
+		display: block;
+		text-align: left;
+		padding: 0px;
+	}
+
+	header .menu li a {
+		padding: 5px;
+		margin-bottom: 0px;
+	}
+
+	header .menu li a:before {
+		font-family: FontAwesome;
+		content: "\f0e5";
+		margin-right: 10px;
+	}
+
+	header h1 {
+		margin-bottom: 30px;
+	}
+
+	header.sticky .menu {
+		display: none;
+		float: none !important;
+		clear: both;
+	}
+
+	header.sticky h1 {
+		margin-bottom: 15px;
+	}
+
+	.container {
+		padding-top: 120px;
+	}
+
+	header.sticky a.sandwich {
+		display: inline-block;
+		color: #ffffff;
+		float: right;
+		padding: 13px 20px 7px 20px;
+		font-size: 22px;
+	}
+}
+
+
+/* TABLET */
+@media only screen and (max-width: 780px) {
+
+}
+
+
+/* PHONE */
+@media only screen and (max-width: 600px) {
+	header.sticky .menu {
+		float: right;
+		margin-top: 5px;
+		margin-right: 5px;
+		transition: all 0.4s ease;
+		font-size: 10px;
+	}
+}
+
+/* PHONE */
+@media only screen and (max-width: 400px) {
+	header h1 {
+		font-size: 34px;
+	}
+
+	header.sticky h1 {
+		font-size: 18px;
+	}
+}
